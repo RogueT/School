@@ -28,10 +28,10 @@ public class Payroll {
         System.out.println("Dedcutions: ");
         double Fedwit = gross*fedtax;
         double Fedint = (fedtax*100)/100.0;
-        System.out.printf("        Federal Withholding: ( %%%4.2f ): $%4.2f\n",Fedint,Fedwit);
+        System.out.printf("        Federal Withholding: ( %%%4.1f ): $%4.2f\n",Fedint,Fedwit);
         double Statewit = gross*statetax;
         double Stateint = (statetax*100)/100.0;
-        System.out.printf("        State Withholding ( %%%4.2f ): $%4.2f\n",Stateint,Statewit);
+        System.out.printf("        State Withholding ( %%%4.1f ): $%4.2f\n",Stateint,Statewit);
         double Deduc = Fedwit+Statewit;
         System.out.printf("        Total Deduction: $%4.2f\n",Deduc);
         double netpay = gross-Deduc;
