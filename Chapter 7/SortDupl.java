@@ -13,16 +13,13 @@ public class SortDupl {
 
         for(int mklist = 0; mklist < numList.length; mklist++){
             numList[mklist] = input.nextInt();
-            
         }
 
         int[] prntary = remDup(numList);
         System.out.print("List without duplicates is ");
 
         for(int i=0; i<prntary.length; i++){
-            if(prntary[i]==numList[i]){
                 System.out.print(prntary[i]+" ");
-            }
         }
     }
         public static int[] remDup(int[] num){
@@ -44,7 +41,12 @@ public class SortDupl {
                         count++;
                     }   
                 
-            }return tempList;
+            }
+            int[] sizeAry = new int[count];
+            for(int counting=0; counting<sizeAry.length; counting++){
+                sizeAry[counting]=tempList[counting];
+            }
+            return sizeAry;
             
         }
 
