@@ -96,6 +96,19 @@ public class QuestGame {
                    String Guess = input.nextLine();
                    String UpperCase=Guess.toUpperCase();
                     
+                   boolean again=false;
+                   do{
+                   if(UpperCase.equals("A") || UpperCase.equals("B") || UpperCase.equals("C") || UpperCase.equals("D")){
+                    again=true;
+                    //System.out.println(UpperCase); //test line
+                   }else{
+                    System.out.println("Invalid Input! Please Enter A, B, C, or D");
+                    System.out.print("Please try again: ");
+                        Guess = input.nextLine();
+                        UpperCase=Guess.toUpperCase();
+                   } 
+                   }while(!again);  
+                    
                    boolean wrong=false;
                    int chAN=2; //chAN+=2; add to bottom
                 for(int chIN=1; chIN<9; chIN+=2){
@@ -135,6 +148,19 @@ public class QuestGame {
                 
                    String Guess = input.nextLine();
                    String UpperCase=Guess.toUpperCase();
+                   
+                   boolean again=false;
+                   do{
+                   if(UpperCase.equals("A") || UpperCase.equals("B") || UpperCase.equals("C") || UpperCase.equals("D")){
+                    again=true;
+                    //System.out.println(UpperCase); //test line
+                   }else{
+                    System.out.println("Invalid Input! Please Enter A, B, C, or D");
+                    System.out.print("Please try again: ");
+                        Guess = input.nextLine();
+                        UpperCase=Guess.toUpperCase();
+                   } 
+                   }while(!again); 
                     
                    boolean wrong=false;
                    int chAN=2;
@@ -158,9 +184,7 @@ public class QuestGame {
                         
                         }
                         wrong2++;  
-                    }  
-                
-                    
+                    }    
                 }
                 }
             }   
@@ -179,6 +203,19 @@ public class QuestGame {
                 
                    String Guess=input.nextLine();
                    String UpperCase=Guess.toUpperCase();
+                   
+                   boolean again=false;
+                   do{
+                   if(UpperCase.equals("A") || UpperCase.equals("B") || UpperCase.equals("C") || UpperCase.equals("D")){
+                    again=true;
+                    //System.out.println(UpperCase); //test line
+                   }else{
+                    System.out.println("Invalid Input! Please Enter A, B, C, or D");
+                    System.out.print("Please try again: ");
+                        Guess = input.nextLine();
+                        UpperCase=Guess.toUpperCase();
+                   } 
+                   }while(!again); 
                     
                    boolean wrong=false;
                    int chAN=2; //chAN+=2; add to bottom
@@ -197,8 +234,6 @@ public class QuestGame {
                         score=score-10;
                         System.out.println("Incorrect. The correct answer should be:"+repeat2List[i][2]);
                     }
-                
-              
                 }
             }
         }
