@@ -40,6 +40,7 @@ if(!wrong){
            //System.out.println(wrong2);
            repeat2List[wrong2][p]=repeat1List[i][p];
            //System.out.print(repeat2List[wrong2][p]); //test line                    
+       }
  }
  ```
 
