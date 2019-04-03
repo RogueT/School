@@ -30,7 +30,7 @@ public class QuestGame {
     /* 3 */ {"When signals are free to travel in both directions over a medium simultaneously, the transmission is considered______. ",
                 "A"," File-Sharing \n",
                 "B"," Full-Duplex \n",
-                "C"," Peer-to-Peet \n",
+                "C"," Peer-to-Peer \n",
                 "D"," Cable Plant \n"," Full-Duplex \n"}, 
     /* 4 */ {"How many layers are there in the Network Model? ",
                 "A"," 6 \n",
