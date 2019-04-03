@@ -9,11 +9,13 @@ If the user answers incorrectly on the second attempt points are deducted.
 
 ## Code Example
 This Code Example is how the questions and multipule choices are printed:
+ ```
  for(int i=0; i<wrong1; i++){
             System.out.println(repeat1List[i][0]);
             for(int k=1; k<9; k++){
                 //if(k==1){System.out.println();};
                 System.out.print(repeat1List[i][k]);
+                ```
                 
 You can print i or k to check the values to ensure that you are getting the results you desire.
 
@@ -28,7 +30,7 @@ Copy Code from Github and put into Code runner or desired compiler. Save file as
 
 ## Tests
 You can use the "test line" below to ensure that the question is stored into the new array.
-
+```
 if(!wrong){
                         System.out.println("Incorrect. The correct answer should be:"+repeat1List[i][9]);
                         score=score-5;
@@ -38,5 +40,6 @@ if(!wrong){
                              //System.out.print(repeat2List[wrong2][p]); //test line
                         
                         }
+                        ```
 
 
