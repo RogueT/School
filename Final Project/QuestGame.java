@@ -73,8 +73,11 @@ public class QuestGame {
         String[][] repeat2List = new String[10][10];
 
         System.out.println("Welcome to the Networking Question Games");
+        System.out.println("Press Q to quit the game");  
         System.out.println("Enter your name to begin: ");        
         String Name = input.nextLine();
+        String UCase=Name.toUpperCase();
+
 
         int score=0;
         int wrong1=0;
@@ -95,20 +98,22 @@ public class QuestGame {
                 
                    String Guess = input.nextLine();
                    String UpperCase=Guess.toUpperCase();
-                    
+                   
                    boolean again=false;
                    do{
                    if(UpperCase.equals("A") || UpperCase.equals("B") || UpperCase.equals("C") || UpperCase.equals("D")){
                     again=true;
                     //System.out.println(UpperCase); //test line
-                   }else{
+                    }else if(UpperCase.equals("Q")){
+                        System.exit(0);
+                    }else{
                     System.out.println("Invalid Input! Please Enter A, B, C, or D");
                     System.out.print("Please try again: ");
                         Guess = input.nextLine();
                         UpperCase=Guess.toUpperCase();
                    } 
-                   }while(!again);  
-                    
+                   }while(!again);                  
+
                    boolean wrong=false;
                    int chAN=2; //chAN+=2; add to bottom
                 for(int chIN=1; chIN<9; chIN+=2){
@@ -151,16 +156,18 @@ public class QuestGame {
                    
                    boolean again=false;
                    do{
-                   if(UpperCase.equals("A") || UpperCase.equals("B") || UpperCase.equals("C") || UpperCase.equals("D")){
-                    again=true;
-                    //System.out.println(UpperCase); //test line
-                   }else{
+                    if(UpperCase.equals("A") || UpperCase.equals("B") || UpperCase.equals("C") || UpperCase.equals("D")){
+                        again=true;
+                        //System.out.println(UpperCase); //test line
+                    }else if(UpperCase.equals("Q")){
+                            System.exit(0);
+                    }else{
                     System.out.println("Invalid Input! Please Enter A, B, C, or D");
                     System.out.print("Please try again: ");
                         Guess = input.nextLine();
                         UpperCase=Guess.toUpperCase();
                    } 
-                   }while(!again); 
+                   }while(!again);  
                     
                    boolean wrong=false;
                    int chAN=2;
@@ -206,10 +213,12 @@ public class QuestGame {
                    
                    boolean again=false;
                    do{
-                   if(UpperCase.equals("A") || UpperCase.equals("B") || UpperCase.equals("C") || UpperCase.equals("D")){
-                    again=true;
-                    //System.out.println(UpperCase); //test line
-                   }else{
+                    if(UpperCase.equals("A") || UpperCase.equals("B") || UpperCase.equals("C") || UpperCase.equals("D")){
+                        again=true;
+                        //System.out.println(UpperCase); //test line
+                    }else if(UpperCase.equals("Q")){
+                            System.exit(0);
+                    }else{
                     System.out.println("Invalid Input! Please Enter A, B, C, or D");
                     System.out.print("Please try again: ");
                         Guess = input.nextLine();
@@ -242,3 +251,5 @@ public class QuestGame {
         if(score==100){System.out.print(" Perfect Score!!!");}  
     }
 }
+
+        
